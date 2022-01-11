@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "Cascadia";
+    src: url(/fonts/Cascadia.ttf);
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #151718;
+    font-size: 13pt;
+    line-height: 1.5;
+    font-family: "Cascadia", monospace;
+    color: white;
+}
+
+p {
+    color: gray;
+}
+
+span {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #6699CC;
+    transition: ease-in-out .2s;
+}
+
+span:hover {
+    color: #6699ccbb;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
