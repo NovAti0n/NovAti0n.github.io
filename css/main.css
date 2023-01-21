@@ -39,4 +39,15 @@ span:hover {
     align-items: center;
     text-align: center;
     min-height: 100vh;
+    margin: auto 5em;
+}
+
+#title {
+    cursor: pointer;
+    transition: ease-in-out .2s;
+    user-select: none;
+}
+
+#title:hover {
+    color: #ffffffbb;
 }

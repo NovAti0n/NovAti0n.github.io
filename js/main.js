@@ -19,4 +19,21 @@ const data = [
     "🚓 HEY! You're on a private land here! I'm calling the cops!"
 ];
 
-document.getElementById("title").innerText = data[Math.floor(Math.random() * data.length)];
+let title = document.getElementById("title");
+let current = 0;
+let disabled = false;
+
+title.addEventListener("click", () => {
+    if (disabled) return;
+
+    disabled = true;
+    title.style.opacity = "0";
+    title.style.transition = "0.2s";
+
+    setTimeout(() => {
+        current = (current + 1) % data.length
+        title.innerText = data[current];
+        title.style.opacity = "1";
+        disabled = false;
+    }, 200);
+});
