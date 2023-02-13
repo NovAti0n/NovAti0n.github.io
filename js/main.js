@@ -12,7 +12,7 @@ const data = [
     "🔧 Sorry, everything is broken. This is gonna take a while.",
     "🙎‍♀️ What are you doing? Go empty the dishwasher!",
     "☀️ Go outside! The weather is beautiful!",
-    "💻 Y0u g0t h4ck3d. Y0u sh0ld pr0b4bly turn 0ff y0ur c0mput3r.",
+    "💻 Y0u g0t h4ck3d. Y0u sh0uld pr0b4bly turn 0ff y0ur c0mput3r.",
     "💾 LOADING WEBSITE... 12 YEARS REMAINING...",
     "🖥️ Windows is rebooting your computer to update things... Be patient...",
     "🛸 The server is currently getting kidnapped by aliens.",
