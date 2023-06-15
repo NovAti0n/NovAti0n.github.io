@@ -45,7 +45,7 @@ span:hover, .goto-link:hover {
     align-items: center;
     text-align: center;
     min-height: 100vh;
-    margin: auto 5em;
+    margin: auto 7vw;
 }
 
 #title-container {
@@ -126,9 +126,3 @@ span:hover, .goto-link:hover {
 .goto-link:last-child {
     margin-bottom: 0;
 }
-
-/* @media screen and (max-width: 768px) {
-    .project-card {
-        max-width: 100%;
-    }
-} */
