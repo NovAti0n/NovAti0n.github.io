@@ -37,3 +37,22 @@ title.addEventListener("click", () => {
         disabled = false;
     }, 200);
 });
+
+// Probably one of the worst implementation, but this works
+// It can be abused a bit, let's not worry about it, this is fine
+
+let cards = document.querySelectorAll(".project-card");
+
+cards.forEach(card => {
+    let links = card.querySelectorAll('.goto-link');
+
+    card.addEventListener("mouseenter", () => {
+        setTimeout(() => {
+            links.forEach(link => link.style.pointerEvents = "auto");
+        }, 100);
+    })
+
+    card.addEventListener("mouseleave", () => {
+        links.forEach(link => link.style.pointerEvents = "none");
+    })
+});
