@@ -25,14 +25,14 @@ let disabled = false;
 
 title.addEventListener("click", () => {
     if (disabled) return;
+    if (current + 1 == data.length) window.location = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
 
     disabled = true;
     title.style.opacity = "0";
     title.style.transition = "0.2s";
 
     setTimeout(() => {
-        current = (current + 1) % data.length
-        title.innerText = data[current];
+        title.innerText = data[++current];
         title.style.opacity = "1";
         disabled = false;
     }, 200);
