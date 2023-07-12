@@ -25,7 +25,10 @@ let disabled = false;
 
 title.addEventListener("click", () => {
     if (disabled) return;
-    if (current + 1 == data.length) window.location = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+    if (current + 1 == data.length) {
+        window.location = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+        return;
+    }
 
     disabled = true;
     title.style.opacity = "0";
