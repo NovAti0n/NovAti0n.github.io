@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  web:
+    image: my-static-website
+    build:
+      context: .
+    ports:
+      - "6969:80"
+    restart: always
